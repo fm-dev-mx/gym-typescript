@@ -1,11 +1,7 @@
-import Navbar from "@/scenes/navbar";
-import Home from "@/scenes/home";
-import OurClasses from "@/scenes/ourClasses";
-import Benefits from "@/scenes/benefits";
-import ContactUs from "@/scenes/contactUs";
-import Footer from "@/scenes/footer";
+import { Navbar } from './components';
+import { Home, Benefits, ContactUs, Footer, OurClasses } from "./pages";
 import { useEffect, useState } from "react";
-import { SelectedPage } from "@/shared/types";
+import { SelectedPage } from "@/models";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
